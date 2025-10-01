@@ -8,8 +8,12 @@
 	// create list of 11 unique tile IDs
 </script>
 
-<div>
-	{rowIndex}
-	<Spacer />
-	<Tile />
+<div class="flex flex-row">
+	<!-- Create a spacer with size according to the current row -->
+	<Spacer size={rowIndex} />
+
+	<!-- Create 11 tiles, each with a unique x, y coordinate -->
+	{#each Array.from({ length: 11 }, (_, i) => i) as index}
+		<Tile x={index} y={rowIndex}/>
+	{/each}
 </div>
