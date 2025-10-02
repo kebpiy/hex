@@ -1,14 +1,14 @@
 <script lang="ts">
 	import Spacer from './Spacer.svelte';
 	import Tile from './Tile.svelte';
-
+	
 	export let rowIndex: number;
 	// create list of `rowIndex` spacers to prepend before the tiles
 
 	// create list of 11 unique tile IDs
 </script>
 
-<div class="flex flex-row">
+<div class="flex flex-row overflow-visible">
 	<!-- Create a spacer with size according to the current row -->
 	<Spacer size={rowIndex} />
 

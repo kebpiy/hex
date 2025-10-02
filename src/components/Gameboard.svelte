@@ -8,7 +8,7 @@
 	}
 </script>
 
-<div id="game" class="box-border flex flex-col border border-[#D9D9D9] p-5 -space-y-2">
+<div id="game" class="box-border flex flex-col border border-[#D9D9D9] p-5 -space-y-2 overflow-visible">
 	{#each rowIndices as rowIndex (rowIndex)}
 		<Row {...rowIndex} />
 	{/each}
